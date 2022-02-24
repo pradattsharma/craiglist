@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Codedaddies List</title>
+    <title>Craig List</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -14,15 +14,15 @@
 <body>
 <nav>
     <div class="container nav-wrapper">
-        <a href="/" class="brand-logo">Codedaddies List</a>
+        <a href="/" class="brand-logo">Craig Lists</a>
         <ul id="nav-mobile" class="right">
             <li><a href="/">Home</a></li>
         </ul>
     </div>
 </nav>
 
-<div class="container">
-    <h1 style="text-align: center">What do you want to search for on Codedaddies List?</h1>
+<div class = "container">
+<h1 style="text-align: center">What do you want to search on Craig List?</h1>
     <div class="row">
         <div class="col s4">
             <!-- Promo Content 1 goes here -->
@@ -50,6 +50,7 @@
                 <p class="light center">We built this with ❤️</p>
             </div>
         </div>
+
     </div>
 
     <form action="{% url 'new_search' %}" method="post">
@@ -60,9 +61,10 @@
         </button>
     </form>
 
-    {% block content %}
+{% block content %}
 
-    {% endblock content %}
+{% endblock content %}
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
